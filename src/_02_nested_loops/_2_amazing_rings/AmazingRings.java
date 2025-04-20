@@ -40,11 +40,12 @@ public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
 
-    PImage waldo;
+    
 
     @Override
     public void settings() {
-
+    		size(WIDTH, HEIGHT);
+    		noFill();+
     }
 
     @Override
