@@ -18,7 +18,7 @@ import processing.core.PImage;
  * 4. Use a for loop to make the first set of rings that will start in the
  *    left half of the window (you can use your code from Bullseye).
  * 
- * 5. Make this set of rings move across the sketch to the right
+5. Make this set of rings move across the sketch to the right
  *    Hint: make two variables, one for x and another for the speed.
  *    Then increase x by the amount in speed.
  *
@@ -38,24 +38,34 @@ import processing.core.PImage;
  */
 public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
-    static final int HEIGHT = 600;
-
+    static final int HEIGHT = 800;
+    int x = 0;
+    int x
     
 
     @Override
     public void settings() {
-    		size(WIDTH, HEIGHT);
-    		noFill();+
+    		
+
+    	size(WIDTH, HEIGHT);
     }
 
     @Override
     public void setup() {
-
-    }
+    	noFill();
+    	}
 
     @Override
     public void draw() {
-
+    	  for(int i = 500; i > 0; i-=51) {
+    		    if(i % 2 == 0) {
+    		    }
+    		    else { 
+    		    	noFill();
+    		    }
+    		  ellipse(400-x,400 , i, i);
+    	  }
+    		  
     }
 
     static public void main(String[] args) {
