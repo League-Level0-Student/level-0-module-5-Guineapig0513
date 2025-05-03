@@ -33,8 +33,16 @@ public class I {
 			}
 		}
 		for(int i = 2014; i < 2026; i++) {
-			System.out.println("In "+i+", I was "+(i - 2014)+" years old.");
+			//System.out.println("In "+i+", I was "+(i - 2014)+" years old.");
+		}
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 3; j++) {
+				//System.out.println(i +" "+ j);			
+				}
+		}
+		for(int i = 0; i <101; i++) {
+			System.out.println(100 + i);
 		}
 	}
-
+	
 }
