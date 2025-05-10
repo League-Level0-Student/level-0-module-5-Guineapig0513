@@ -16,14 +16,27 @@ public class IntroToMethods {
 	 * 		Always inside the ()
 	 * 
 	 * Extra Note: "public" is optional and use "static" if calling the method from main
+	 *   n_n
+	 *  [o.o]
+	 *  o| |o
+	 *   O-O
 	 * 
-	 * 
+	 *        ___
+	 *       U. .U 
+	 * n_____[ v ]
+	 * |______|  |
+	 *  U U   U U
+	 *   
+	 *  
+	 *  
 	 * Instructions
 	 * ------------
 	 * RUN THE CODE
 	 * LOOK AT THE CODE BELOW
 	 * FIGURE OUT THE 3 PARTS TO EACH METHOD
 	 */
+	
+	
 	public static void main(String[] args) {
 		// Method1
 		method1();
@@ -52,7 +65,7 @@ public class IntroToMethods {
 	}
 
 	public static void method3(String message) {
-		System.out.println("Method3");
+		System.out.println(message);
 	}
 
 	public static String method4(String message) {
