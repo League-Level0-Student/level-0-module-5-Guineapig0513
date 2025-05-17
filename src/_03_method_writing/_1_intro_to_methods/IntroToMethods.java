@@ -16,7 +16,8 @@ public class IntroToMethods {
 	 * 		Always inside the ()
 	 * 
 	 * Extra Note: "public" is optional and use "static" if calling the method from main
-	 *   n_n
+	 *  _   n
+	 *  U|_||
 	 *  [o.o]
 	 *  o| |o
 	 *   O-O
@@ -24,7 +25,7 @@ public class IntroToMethods {
 	 *        ___
 	 *       U. .U 
 	 * n_____[ v ]
-	 * |______|  |
+	 * |______|_|
 	 *  U U   U U
 	 *   
 	 *  
