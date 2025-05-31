@@ -29,10 +29,26 @@ public class ImAGummyBear {
 		int e = JOptionPane.showOptionDialog(null, shape+"? interesting.. Now gerald wants you to choose one of the primary colors that he would draw in." ,"I like slope 3 its fun" ,JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, 
 				new String[] {"Yellow sounds nice", "Blue sounds nice", "Red sounds nice"}, null);
 		Color pencil = null;
-		if (e == 0) {
-			
+		if(e == 2) {
+			pencil = Color.RED;
+		}
+		else if(e == 1) {
+			pencil = Color.BLUE;
+		}
+		else {
+			pencil = Color.YELLOW;
 		}
 		
+		
+		if(uh == 2) {
+			drawSquare(gerald, pencil);
+		}
+		else if(uh == 1) {
+			drawTriangle(gerald, pencil);
+		}
+		else {
+			drawCircle(gerald, pencil);
+		}
 
 	}
 
