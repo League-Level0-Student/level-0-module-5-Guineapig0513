@@ -29,6 +29,7 @@ public class IntroToMethods {
 	 *  U U   U U
 	 *   
 	 *  
+	 *  oo
 	 *  
 	 * Instructions
 	 * ------------
