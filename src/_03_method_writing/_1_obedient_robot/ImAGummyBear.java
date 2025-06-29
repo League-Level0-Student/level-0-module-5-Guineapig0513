@@ -12,7 +12,7 @@ public class ImAGummyBear {
 
 		Robot gerald = new Robot();
 		gerald.penDown();
-		int uh = JOptionPane.showOptionDialog(null, "Gerald wants too draw a basic shape. Which shape should he draw? " ,"does anyone see this???" ,JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, 
+		int uh = JOptionPane.showOptionDialog(null, "Gerald wants to draw a basic shape. Which shape should he draw? " ,"does anyone see this???" ,JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, 
 				new String[] {"Can Gerald please draw a circle?", "Can Gerald please draw a triangle", "Can Gerald please draw a square?"}, null);
 
 		String shape = "";
@@ -49,6 +49,7 @@ public class ImAGummyBear {
 		else {
 			drawCircle(gerald, pencil);
 		}
+		System.exit(0);
 
 	}
 
