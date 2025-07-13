@@ -8,6 +8,76 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Code4Life {
+	public static void main(String[] args) {
+		int e = JOptionPane.showOptionDialog(null,
+				"How many hours have you spent coding this week?",
+				null, 0, JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "1-2", "3-4", "5+", "I dont know" },
+				null);
+		
+		if(e == 0) {
+		JOptionPane.showMessageDialog(null, "Stop spending so much time on youtube or tiktok or whatever and start coding now!!!");
+		System.exit(0);
+	}
+		if(e == 1) {
+			JOptionPane.showMessageDialog(null, "Your a coding ninja!!!");
+			System.exit(0);
+		}
+		if(e == 2) {
+			playBatmanTheme();
+			displayBatman();
+			System.exit(0);
+		}
+		int i = 0;
+		if(e == 3) {
+			i = JOptionPane.showOptionDialog(null,
+					"Im gonna ask again... How many hours have you spent coding this week?",
+					null, 0, JOptionPane.INFORMATION_MESSAGE, null,
+					new String[] { "1-2", "3-4", "5+", "I actually dont know." },
+					null);
+			
+		}
+		
+		if(i == 0) {
+			JOptionPane.showMessageDialog(null, "Stop spending so much time on youtube or tiktok or whatever and start coding now!!!");
+			System.exit(0);
+		}
+			if(i == 1) {
+				JOptionPane.showMessageDialog(null, "Your a coding ninja!!!");
+				System.exit(0);
+			}
+			if(i == 2) {
+				playBatmanTheme();
+				displayBatman();
+				System.exit(0);
+			}
+			int u = 0;
+			if(i == 3) {
+				u = JOptionPane.showOptionDialog(null,
+						"JUST ANSWER THE QUESTION!! HOW MANY HOURS HAVE YOU SPENT CODING THIS WEEK?????",
+						null, 0, JOptionPane.INFORMATION_MESSAGE, null,
+						new String[] { "1-2", "3-4", "5+", "Just leave me alone." },
+						null);
+			}
+			if(u == 0) {
+				JOptionPane.showMessageDialog(null, "Stop spending so much time on youtube or tiktok or whatever and start coding now!!!");
+				System.exit(0);
+			}
+				if(u == 1) {
+					JOptionPane.showMessageDialog(null, "Your a coding ninja!!!");
+					System.exit(0);
+				}
+				if(u == 2) {
+					playBatmanTheme();
+					displayBatman();
+					System.exit(0);
+				}
+				if(u == 3) {
+					JOptionPane.showMessageDialog(null, "...");
+					JOptionPane.showMessageDialog(null, "Fine. Since you wont answer my question.");
+					System.exit(0);
+				}
+	}
 	/***********  SOUND ***************
 	 * Some computers are unable to play sounds. 
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
@@ -17,10 +87,7 @@ public class Code4Life {
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
-
-	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
-	// write code instead.
-
+	
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
 
@@ -35,7 +102,7 @@ public class Code4Life {
 	//	     Then put batman.wav into the "_2_code_4_life" project
 	//       If you want to play a different audio, change the file name in the code below.
 		if (canPlaySounds) {		
-			File sound = new File("src/_04_practice/_2_code_4_life/batman.wav");
+			File sound = new File("src/_04_practice/_2_code_4_life/batman_theme_x.wav");
 			if (sound.exists()) {
 				new Thread(() -> {
 				try {

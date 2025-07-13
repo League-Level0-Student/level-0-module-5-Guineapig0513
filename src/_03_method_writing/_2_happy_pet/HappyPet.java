@@ -1,3 +1,4 @@
+
 package _03_method_writing._2_happy_pet;
 
 import javax.swing.JOptionPane;
@@ -30,7 +31,7 @@ public class HappyPet {
 			int task = JOptionPane.showOptionDialog(null,
 					"You now have this breathing living creature in your house what will you do with it?", "Your House",
 					0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Pet + Cuddle", "Feed + Give water", "Take a Walk", "Groom", "Clean Up The Cage/House", "Let out to the wild" },
+					new String[] { "Pet + Cuddle", "Feed + Give water", "Take a Walk", "Groom", "Clean Up The Cage/House", "Let out to the wild", "Sleep juice" },
 					null);
 			System.out.println(happinessLevel);
 			if (task == 0) {
@@ -51,6 +52,9 @@ public class HappyPet {
 			if (task == 5) {
 				why(e);
 			}
+			if (task == 6) {
+				nonawake(e);
+			}
 			JOptionPane.showMessageDialog(null, "Happiness percentage: "+happinessLevel+". Goal: 100% happy");
 			// 6. Use user input to call the appropriate method created in step 5 below.
 
@@ -58,7 +62,16 @@ public class HappyPet {
 			// user that he loves his pet and use break; to exit for loop.
 
 		}
-		JOptionPane.showMessageDialog(null, "Your pet is very happy :>");
+		JOptionPane.showMessageDialog(null, "Your pet is very happy :>! Your better then SOME people. (Liam im looking at you)");
+	}
+
+	private static void nonawake(int e) {
+		for(int i =0; i < 4; i++) {
+			JOptionPane.showMessageDialog(null, "...");
+		}
+		JOptionPane.showMessageDialog(null, "YOUR PET WAS FINE DUDE. WELL ATLEAST THAT PET IS FREE FROM YOUR TERRIBLE CARE OF IT.");
+		JOptionPane.showMessageDialog(null, "YOU SHOULD GO TO JAIL FOR ANIMAL CRUELTY GEEZ.");
+		System.exit(0);
 	}
 
 	private static void why(int e) {
