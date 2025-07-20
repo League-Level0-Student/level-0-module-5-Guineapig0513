@@ -31,7 +31,7 @@ public class HappyPet {
 			int task = JOptionPane.showOptionDialog(null,
 					"You now have this breathing living creature in your house what will you do with it?", "Your House",
 					0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Pet + Cuddle", "Feed + Give water", "Take a Walk", "Groom", "Clean Up The Cage/House", "Let out to the wild", "Sleep juice" },
+					new String[] { "Pet + Cuddle", "Feed + Give water", "Take a Walk", "Groom", "Clean Up The Cage/House", "Let out to the wild (no pls dont)", "Sleep juice (why?)" },
 					null);
 			System.out.println(happinessLevel);
 			if (task == 0) {
